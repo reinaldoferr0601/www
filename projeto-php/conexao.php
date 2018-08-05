@@ -6,5 +6,3 @@ if($conexao){
 	$erro = mysqli_error($conexao);
 	echo "aconteceu um erro: $erro";
 }
-
-
