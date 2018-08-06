@@ -47,7 +47,7 @@
 			if(cadastracliente($conexao, $nome, $endereco, $telefone, $email, $idade, $salario)){
 				echo "Cadastro realizado com sucesso";
 			} else {
-				$erro = mysql_error($conexao);
+				$erro = mysqli_error($conexao);
 				echo "Aconteceu o erro: $erro";
 			}
 

@@ -1,8 +1,17 @@
 <?php 
-$conexao = mysqli_connect('localhost','root','','projeto_php');
-if($conexao){
-	echo "conectado com sucesso";
-} else{
-	$erro = mysqli_error($conexao);
-	echo "aconteceu um erro: $erro";
-}
+
+$servername = "localhost";
+$username = "root";
+$password  = "";
+$database = "projeto_php";
+
+//Conexao bando de dados
+$conexao = mysqli_connect($servername,$username,$password,$database);
+
+//validar conexao
+if(!$conexao) {
+	die("Connection failed: " .mysqli_connect_error());
+} 
+echo "Conected successfully";
+
+?>
