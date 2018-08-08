@@ -1,7 +1,7 @@
 <?php 
-	include("banco-cliente.php");
 	include("conexao.php");
- ?>
+	include("banco-cliente.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
